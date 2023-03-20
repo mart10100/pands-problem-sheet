@@ -20,8 +20,10 @@ sum = int(amount1) + int(amount2)
 # Now that they are added together, need to convert to euro and cent amounts and output with currency symbol etc:
   
 # First converting sum to a float so that it can be divided by 100 with accuracy: (Used https://www.datacamp.com/tutorial/python-data-type-conversion to see how to convert int to float)
-
+# I am aware of the warning against using floats due to inaccurate calculations(i.e 0.2999996) but I think so long as the cent values are integers this shouldn't be a problem (hoopefully my bit of testing on the code was robust enough!). 
 float(sum)
 
 # Now using print with the f'{}' function (as seen in the videos) to divide the cent value by 100, to get the euro value:
 print(f'The sum of these amounts is €{sum/100}')
+
+
