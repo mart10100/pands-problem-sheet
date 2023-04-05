@@ -13,3 +13,5 @@ elif (number % 2) != 0:
 else: 
     number = 1
     print("1")
+
+    # This does not work as 
