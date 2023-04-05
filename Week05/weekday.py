@@ -6,7 +6,7 @@
 # Will need to make two lists or possibly a dictionary to assign what weekdays and weekdend days are. 
 # May need an if loop saying something like if mon-fri, then ... , if sat/sun, then 
 
-import datetime # https://www.w3schools.com/python/python_datetime.asp
+# import datetime # https://www.w3schools.com/python/python_datetime.asp
 
 #today = datetime.datetime.now() # https://www.w3schools.com/python/trypython.asp?filename=demo_datetime_strftime_a2
 
@@ -42,6 +42,8 @@ if weekno < 5:
     # 0 (Monday) to 5 (Exclusive of 5 - Saturday) are weekdays
 else:  
     print ("It is the weekend, yay!")
+
+
 
 
 # Seems to be the most straightforward code, despite not using dictionaries
