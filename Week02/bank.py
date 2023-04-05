@@ -7,15 +7,15 @@
 #amount1 = input("Enter amount1 (in cent): ")
 #amount2 = input("Enter amount2 (in cent): ")
 
-# This is inputting the amounts as strings. This was shown to be unreliable in the lectures so they need to be converted to floats: 
+# This is inputting the amounts as strings. This was shown to be unreliable in the lectures so they need to be converted to integers: 
 
 
-amount1 = input("Enter amount1 (in cent): ")
-amount2 = input("Enter amount2 (in cent): ")
+amount1 = int(input("Enter amount1 (in cent): "))
+amount2 = int(input("Enter amount2 (in cent): "))
 
 # Convert to integers and add amounts (used W3 for this - https://www.w3schools.com/python/python_howto_add_two_numbers.asp)
 
-sum = int(amount1) + int(amount2) 
+sum = (amount1 + amount2)  
 
 # Now that they are added together, need to convert to euro and cent amounts and output with currency symbol etc:
   
@@ -24,6 +24,6 @@ sum = int(amount1) + int(amount2)
 float(sum)
 
 # Now using print with the f'{}' function (as seen in the videos) to divide the cent value by 100, to get the euro value:
-print(f'The sum of these amounts is €{sum/100}')
+print(f'The sum of these amounts is €{"%.2f" % (sum/100)}')
 
-
+# The '"%.2f" %' means to format the floating point to a given number of decimals, in this case it is to 2. 
