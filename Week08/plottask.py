@@ -24,6 +24,6 @@ plt.plot(x_points, y_points)
 plt.title("Task 8 - Plot of Normal distribution \n and function h(x) = x**3")
 plt.xlabel("X - axis") # Creating labels for the axes - https://www.w3schools.com/python/matplotlib_labels.asp
 plt.ylabel("Y - axis")
-plt.legend(["h(x) = x**3","normal dist."], loc = 0) # https://www.tutorialspoint.com/manually-add-legend-items-python-matplotlib
+plt.legend(["h(x) = x**3","normal dist."]) # https://www.tutorialspoint.com/manually-add-legend-items-python-matplotlib
 
 plt.show()
